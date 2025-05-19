@@ -69,9 +69,62 @@ app.delete('/products/:id', (req, res) => {
   res.send('Producto eliminado correctamente');
 });
 
+// Filtro por precio exacto
+app.get('/products/filter', (req, res) => {
+  const precio = parseInt(req.query.precio); // capturamos el valor de la query ?precio=
+
+  if (isNaN(precio)) {
+    return res.status(400).send('Precio no válido');
+  }
+
+  const resultado = products.filter(producto => producto.precio === precio);
+
+  res.json({
+    description: `Productos con precio ${precio}`,
+    items: resultado
+  });
+});
+
+// Filtro por rango de precios (entre 50 y 250)
+app.get('/products/rango', (req, res) => {
+  const resultado = products.filter(producto => producto.precio >= 50 && producto.precio <= 250);
+
+  res.json({
+    description: 'Productos con precio entre 50 y 250',
+    items: resultado
+  });
+});
+
+// Buscar producto por ID
+app.get('/products/id/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+
+  const producto = products.find(p => p.id === id);
+
+  if (!producto) {
+    return res.status(404).send('Producto no encontrado');
+  }
+
+  res.json(producto);
+});
+
+// Buscar producto por nombre (query string)
+app.get('/products/nombre', (req, res) => {
+  const nombre = req.query.nombre?.toLowerCase();
+
+  const resultado = products.filter(producto =>
+    producto.nombre.toLowerCase().includes(nombre)
+  );
+
+  if (resultado.length === 0) {
+    return res.status(404).send('Producto no encontrado');
+  }
+
+  res.json(resultado);
+});
 
 //  Levantar servidor (esto siempre debe ir al final)
 app.listen(puerto, () => {
   console.log(`Servidor levantado en el puerto ${puerto}`);
-});g
+});
 
