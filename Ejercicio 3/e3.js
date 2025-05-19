@@ -52,8 +52,26 @@ app.put('/products/:id', (req, res) => {
   res.send('Producto actualizado correctamente');
 });
 
+// Eliminar un producto por ID
+app.delete('/products/:id', (req, res) => {
+  const id = parseInt(req.params.id); // ID desde la URL
+
+  // Buscar si existe
+  const index = products.findIndex(producto => producto.id === id);
+
+  if (index === -1) {
+    return res.status(404).send('Producto no encontrado');
+  }
+
+  // Eliminar del array
+  products.splice(index, 1);
+
+  res.send('Producto eliminado correctamente');
+});
+
+
 //  Levantar servidor (esto siempre debe ir al final)
 app.listen(puerto, () => {
   console.log(`Servidor levantado en el puerto ${puerto}`);
-});
+});g
 
