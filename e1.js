@@ -1,4 +1,3 @@
-console.log(" Hola Elida, el archivo se está ejecutando...");
 
 // 1️ Importamos el módulo express
 const express = require('express');

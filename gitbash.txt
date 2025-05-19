@@ -1,0 +1,243 @@
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ npm init -y
+Wrote to C:\Users\Elida\package.json:
+
+{
+  "name": "elida",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ npm install express
+
+added 66 packages, and audited 67 packages in 2s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ touch e1.js
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ node e1.js
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ node e1.js
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ pwd
+/c/Users/Elida
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ ^C
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ ls
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ Links/
+'Local Sites'/
+'Menú Inicio'@
+ Microsoft/
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{baa8f904-1c00-11f0-9684-9c2a6a354c10}.TM.blf
+ NTUSER.DAT{baa8f904-1c00-11f0-9684-9c2a6a354c10}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{baa8f904-1c00-11f0-9684-9c2a6a354c10}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Videos/
+ e1.js
+ ej1/
+ ej2/
+ ej3/
+ node_modules/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ package-lock.json
+ package.json
+ routing-node/
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ node e1.js
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Elida\e1.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.14.0
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ pwd
+/c/Users/Elida
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ ^C
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ cd "/c/usuarios/Elida/express-ejercicios"
+bash: cd: /c/usuarios/Elida/express-ejercicios: No such file or directory
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ node e1.js
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Elida\e1.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.14.0
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ cd C:\Users\Elida\express-ejercicios
+bash: cd: C:UsersElidaexpress-ejercicios: No such file or directory
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ ^C
+
+Elida@LAPTOP-APL3C58K MINGW64 ~
+$ cd /c/Users/Elida/express-ejercicios
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ node e1.js
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ ^C
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ node e1.js
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ ls
+e1.js  node_modules/  package-lock.json  package.json
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ node e1.js
+� Hola Elida, el archivo se está ejecutando...
+Servidor levantado en el puerto 3000
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ node e1.js
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Elida\express-ejercicios\e1.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.14.0
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ node e1.js
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Elida\express-ejercicios\e1.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.14.0
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ cd C:\Users\Elida\express-ejercicios\Ejercicio-EXPRESSJS\e1.js
+bash: cd: C:UsersElidaexpress-ejerciciosEjercicio-EXPRESSJSe1.js: No such file or directory
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ cd C:\Users\Elida\express-ejercicios\Ejercicio-EXPRESSJS\e1.js^C
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ cd C:\Users\Elida\express-ejercicios\Ejercicio-EXPRESSJS\e1.js
+bash: cd: C:UsersElidaexpress-ejerciciosEjercicio-EXPRESSJSe1.js: No such file or directory
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ cd cd /c/Users/Elida/express-ejercicios/Ejercicio-EXPRESSJS
+^C
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ $ cd cd /c/Users/Elida/express-ejercicios/Ejercicio-EXPRESSJS
+^C
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ ^[[200~cd /c/Users/Elida/express-ejercicios/Ejercicio-EXPRESSJS
+bash: $'\E[200~cd': command not found
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios
+$ cd /c/Users/Elida/express-ejercicios/Ejercicio-EXPRESSJS
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios/Ejercicio-EXPRESSJS (main)
+$ node e1.js
+� Hola Elida, el archivo se está ejecutando...
+Servidor levantado en el puerto 3000
+
+Elida@LAPTOP-APL3C58K MINGW64 ~/express-ejercicios/Ejercicio-EXPRESSJS (main)
+$ node e1.js
+Servidor levantado en el puerto 3000
